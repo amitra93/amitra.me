@@ -20,6 +20,5 @@ function safeSelect() {
 }
 
 function initialSelect(pageId){
-	console.log(pageId);
 	$('#'+pageId).click();
 }
