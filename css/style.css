@@ -113,7 +113,12 @@ nav ul li:before {
     text-shadow: rgba(0,0,0,0.2) 1px 1px 1px;
     z-index: 200;
     line-height: 1.3em;
+	opacity: .5;
   }
+  
+ nav ul li:hover {
+	opacity: 1.0;
+}
 
 nav ul li:nth-child(1):before {
 	content: url(../img/home.png);
@@ -149,7 +154,7 @@ nav ul li a {
      line-height: 2.8em;
      position: absolute;
      overflow: hidden;
-	 opacity: .7;
+	 opacity: .5;
      -webkit-transition: all 0.1s ease-in-out;
      -moz-transition: all 0.1s ease-in-out;
      -ms-transition: all 0.1s ease-in-out;
@@ -187,8 +192,12 @@ nav ul li a:hover {
   transition: all 0.1s ease-in-out;
 }
 
-nav ul li a:active {
+nav ul li a.selected {
 	opacity: 1.0;
+}
+
+nav ul li a.unselected {
+	opacity: .5;
 }
 
 nav ul li:nth-child(1) {
