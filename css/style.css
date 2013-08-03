@@ -8,7 +8,7 @@
 }
 
 html {
-   background: url(../img/background.jpg) no-repeat center center fixed; 
+   background: url(../img/background.jpg) no-repeat center center fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -25,51 +25,53 @@ header{
 
     }
 
-	header h1{
+header h1{
         font-size:5em;
-		font-family: "PT Sans Narrow", sans-serif;
+font-family: "PT Sans Narrow", sans-serif;
     }
-	
-	header h2{
+
+header h2{
         opacity:.75;
         font-size: 2em;
-		font-family: "PT Sans", sans-serif;
-		text-transform: uppercase;
+font-family: "PT Sans", sans-serif;
+text-transform: uppercase;
     }
-	
+
 article{
-	color:#FFF;
-	position:absolute;
-	width:60%;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
-	line-height:1.1;
-	padding-top: 4%;
-	padding-bottom: 7%;
-	left: 25%;
-	text-align: justify;
+color:#FFF;
+position:absolute;
+width:60%;
+text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+line-height:1.1;
+padding-top: 4%;
+padding-bottom: 7%;
+left: 25%;
+text-align: justify;
 }
 
 article h2{
-	opacity:.75;
-	font-size:52px;
-	font-family: "PT Sans Narrow", sans-serif;
-	text-align: center;
+opacity:.75;
+font-size:52px;
+font-family: "PT Sans Narrow", sans-serif;
+text-align: center;
 }
 
 article p{
-	font-size:20px;
-	font-family: "PT Sans", sans-serif;
+font-size:20px;
+font-family: "PT Sans", sans-serif;
 }
 
 hr{
-	background: #fff;
-	border: 0;
-	height: 4px;
-	opacity: 0.7;
-	margin: 20px auto 20px;
+background: #fff;
+border: 0;
+height: 4px;
+opacity: 0.7;
+margin: 20px auto 20px;
 }
 
 nav {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 nav ul {
@@ -86,12 +88,12 @@ nav ul li {
    margin: 0 0;
    -webkit-animation: menu 2s;
    -webkit-animation-fill-mode: forwards;
-   -moz-animation: menu 2s; 
-   -moz-animation-fill-mode: forwards; 
-   -ms-animation: menu 2s; 
-   -ms-animation-fill-mode: forwards; 
+   -moz-animation: menu 2s;
+   -moz-animation-fill-mode: forwards;
+   -ms-animation: menu 2s;
+   -ms-animation-fill-mode: forwards;
    animation: menu 2s; /* Safari and Chrome */
-   animation-fill-mode: forwards; 
+   animation-fill-mode: forwards;
    opacity: 0;
 }
 
@@ -116,29 +118,29 @@ nav ul li:before {
   }
 
 nav ul li:nth-child(1):before {
-	content: url(../img/home.png);
+content: url(../img/home.png);
 }
 
 nav ul li:nth-child(2):before {
-	content: url(../img/about.png);
+content: url(../img/about.png);
 }
 
 nav ul li:nth-child(3):before {
-	content: url(../img/projects.png);
+content: url(../img/projects.png);
 }
 
 nav ul li:nth-child(4):before {
-	content: url(../img/resume.png);
+content: url(../img/resume.png);
 }
 
 nav ul li:nth-child(5):before {
-	content: url(../img/contact.png);
+content: url(../img/contact.png);
 }
 
 
 nav ul li a {
-	top: 600%;
-	color: #fff;
+top: 600%;
+color: #fff;
      display: block;
      height: 50px;
      padding: 0 2em 0 60px;
@@ -149,13 +151,13 @@ nav ul li a {
      line-height: 2.8em;
      position: absolute;
      overflow: hidden;
-	 opacity: .4;
+opacity: .4;
      -webkit-transition: all 0.1s ease-in-out;
      -moz-transition: all 0.1s ease-in-out;
      -ms-transition: all 0.1s ease-in-out;
      transition: all 0.1s ease-in-out;
      text-shadow: rgba(0,0,0,0.3) 1px 1px;
-	 width: 50px;
+width: 50px;
 }
 
   nav ul li:nth-child(1) a {
@@ -188,11 +190,11 @@ nav ul li a:hover {
 }
 
 nav ul li a.selected {
-	opacity: 1.0;
+opacity: 1.0;
 }
 
 nav ul li a.unselected {
-	opacity: .5;
+opacity: .5;
 }
 
 nav ul li:nth-child(1) {
@@ -210,7 +212,7 @@ nav ul li:nth-child(2) {
 }
 
 nav ul li:nth-child(3) {
-   -webkit-animation-delay: 0.45s; 
+   -webkit-animation-delay: 0.45s;
    -moz-animation-delay: 0.45s;
    -ms-animation-delay: 0.45s;
    animation-delay: 0.45s;
@@ -218,9 +220,9 @@ nav ul li:nth-child(3) {
 
 nav ul li:nth-child(4) {
    -webkit-animation-delay: 0.60s;
-   -moz-animation-delay: 0.60s; 
-   -ms-animation-delay: 0.60s; 
-   animation-delay: 0.60s; 
+   -moz-animation-delay: 0.60s;
+   -ms-animation-delay: 0.60s;
+   animation-delay: 0.60s;
 }
 
 nav ul li:nth-child(5) {
@@ -231,31 +233,225 @@ nav ul li:nth-child(5) {
 }
 
 @-webkit-keyframes menu {
-  0%   {opacity: 0;}
-  25%  {opacity: 0.7;}
-  50%  {opacity: 1;}
+  0% {opacity: 0;}
+  25% {opacity: 0.7;}
+  50% {opacity: 1;}
   100% {opacity: 1;}
 }
 
 @-moz-keyframes menu {
-  0%   {opacity: 0;}
-  25%  {opacity: 0.7;}
-  50%  {opacity: 1;}
+  0% {opacity: 0;}
+  25% {opacity: 0.7;}
+  50% {opacity: 1;}
   100% {opacity: 1;}
 }
 
 @-ms-keyframes menu {
-  0%   {opacity: 0;}
-  25%  {opacity: 0.7;}
-  50%  {opacity: 1;}
+  0% {opacity: 0;}
+  25% {opacity: 0.7;}
+  50% {opacity: 1;}
   100% {opacity: 1;}
 }
 
 @keyframes menu {
-  0%   {opacity: 0;}
-  25%  {opacity: 0.7;}
-  50%  {opacity: 1;}
+  0% {opacity: 0;}
+  25% {opacity: 0.7;}
+  50% {opacity: 1;}
   100% {opacity: 1;}
 }
 
+.og-grid {
+	list-style: none;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
 
+.og-grid li {
+	display: inline-block;
+	margin: 10px 5px 0 5px;
+	vertical-align: top;
+	height: 250px;
+}
+
+.og-grid li > a,
+.og-grid li > a img {
+	border: none;
+	outline: none;
+	display: block;
+	position: relative;
+}
+
+.og-grid li.og-expanded > a::after {
+	top: auto;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #ddd;
+	border-width: 15px;
+	left: 50%;
+	margin: -20px 0 0 -15px;
+}
+
+.og-expander {
+	position: absolute;
+	background: #ddd;
+	top: auto;
+	left: 0;
+	width: 100%;
+	margin-top: 10px;
+	text-align: left;
+	height: 0;
+	overflow: hidden;
+}
+
+.og-expander-inner {
+	padding: 50px 30px;
+	height: 100%;
+}
+
+.og-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 1px;
+	background: #888;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.og-close::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+	background: #333;
+}
+
+.og-fullimg,
+.og-details {
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.og-details {
+	padding: 0 40px 0 20px;
+}
+
+.og-fullimg {
+	text-align: center;
+}
+
+.og-fullimg img {
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.og-details h3 {
+	font-weight: 300;
+	font-size: 52px;
+	padding: 40px 0 10px;
+	margin-bottom: 10px;
+}
+
+.og-details p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #999;
+}
+
+.og-details a {
+	font-weight: 700;
+	font-size: 16px;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px 20px;
+	border: 3px solid #333;
+	display: inline-block;
+	margin: 30px 0 0;
+	outline: none;
+}
+
+.og-details a::before {
+	content: '\2192';
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.og-details a:hover {
+	border-color: #999;
+	color: #999;
+}
+
+.og-loading {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ddd;
+	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	-webkit-animation: loader 0.5s infinite ease-in-out both;
+	-moz-animation: loader 0.5s infinite ease-in-out both;
+	animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@media screen and (max-width: 830px) {
+
+	.og-expander h3 { font-size: 32px; }
+	.og-expander p { font-size: 13px; }
+	.og-expander a { font-size: 12px; }
+
+}
+
+@media screen and (max-width: 650px) {
+
+	.og-fullimg { display: none; }
+	.og-details { float: none; width: 100%; }
+	
+}

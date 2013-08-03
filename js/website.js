@@ -6,17 +6,16 @@ $(document).ready(function() {
 		animation: 'fadeIn',
 		animationOut: 'fadeOut',
 		'default': 'background',
-		cache: false,
+		cache: true,
 		onChange: initialSelect
 	});
-	
 	$(menuItemNames.join(', ')).click(safeSelect);
 });
 
-function safeSelect() {  
-    var $this = $(this);
-    $this.removeClass('unselected').addClass('selected');
-    $this.closest('ul').find('a').not(this).removeClass('selected').addClass('unselected');
+function safeSelect() {
+	var $this = $(this);
+	$this.removeClass('unselected').addClass('selected');
+	$this.closest('ul').find('a').not(this).removeClass('selected').addClass('unselected');
 }
 
 function initialSelect(pageId){
