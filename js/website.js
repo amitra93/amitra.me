@@ -1,8 +1,8 @@
-var menuItemNames = ['#background', '#about', '#projects', '#resume', '#contact'];
+var menuItemNames = ['#background', '#about', '#projects', '#resume'];
 
 $(document).ready(function() {
 	$('#page_holder').pagify({
-		pages: ['background', 'about', 'resume', 'projects', 'contact'],
+		pages: ['background', 'about', 'resume', 'projects'],
 		animation: 'fadeIn',
 		animationOut: 'fadeOut',
 		'default': 'background',

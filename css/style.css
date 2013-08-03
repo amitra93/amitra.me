@@ -18,13 +18,13 @@ html {
 header{
         color:#FFF;
         position:absolute;
-        top:35%;
+        top:25%;
         left:60%;
         text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
         line-height:1.1;
 
     }
-
+	
 header h1{
         font-size:5em;
 font-family: "PT Sans Narrow", sans-serif;
@@ -133,14 +133,11 @@ nav ul li:nth-child(4):before {
 content: url(../img/resume.png);
 }
 
-nav ul li:nth-child(5):before {
-content: url(../img/contact.png);
-}
 
 
 nav ul li a {
-top: 600%;
-color: #fff;
+	top: 600%;
+	color: #fff;
      display: block;
      height: 50px;
      padding: 0 2em 0 60px;
@@ -151,7 +148,7 @@ color: #fff;
      line-height: 2.8em;
      position: absolute;
      overflow: hidden;
-opacity: .4;
+	opacity: .4;
      -webkit-transition: all 0.1s ease-in-out;
      -moz-transition: all 0.1s ease-in-out;
      -ms-transition: all 0.1s ease-in-out;
@@ -161,7 +158,7 @@ width: 50px;
 }
 
   nav ul li:nth-child(1) a {
-    background: #888888;
+    background: #bd2a4e;
   }
 
   nav ul li:nth-child(2) a {
@@ -176,9 +173,6 @@ width: 50px;
     background: #654b6b;
   }
 
-  nav ul li:nth-child(5) a {
-    background: #bd2a4e;
-  }
 
 nav ul li a:hover {
    opacity: 1.0;
@@ -198,39 +192,33 @@ opacity: .5;
 }
 
 nav ul li:nth-child(1) {
-   -webkit-animation-delay: 0.15s;
-   -moz-animation-delay: 0.15s;
-   -ms-animation-delay: 0.15s;
-   animation-delay: 0.15s;
+   -webkit-animation-delay: 0.20s;
+   -moz-animation-delay: 0.20s;
+   -ms-animation-delay: 0.20s;
+   animation-delay: 0.20s;
 }
 
 nav ul li:nth-child(2) {
-   -webkit-animation-delay: 0.30s;
-   -moz-animation-delay: 0.30s;
-   -ms-animation-delay: 0.30s;
-   animation-delay: 0.30s;
+   -webkit-animation-delay: 0.40s;
+   -moz-animation-delay: 0.40s;
+   -ms-animation-delay: 0.40s;
+   animation-delay: 0.40s;
 }
 
 nav ul li:nth-child(3) {
-   -webkit-animation-delay: 0.45s;
-   -moz-animation-delay: 0.45s;
-   -ms-animation-delay: 0.45s;
-   animation-delay: 0.45s;
-}
-
-nav ul li:nth-child(4) {
    -webkit-animation-delay: 0.60s;
    -moz-animation-delay: 0.60s;
    -ms-animation-delay: 0.60s;
    animation-delay: 0.60s;
 }
 
-nav ul li:nth-child(5) {
-   -webkit-animation-delay: .75s;
-   -moz-animation-delay: .75s;
-   -ms-animation-delay: .75s;
-   animation-delay: .75s;
+nav ul li:nth-child(4) {
+   -webkit-animation-delay: 0.80s;
+   -moz-animation-delay: 0.80s;
+   -ms-animation-delay: 0.80s;
+   animation-delay: 0.80s;
 }
+
 
 @-webkit-keyframes menu {
   0% {opacity: 0;}
@@ -259,6 +247,15 @@ nav ul li:nth-child(5) {
   50% {opacity: 1;}
   100% {opacity: 1;}
 }
+
+.social {
+	opacity: .7;
+}
+
+.social:hover {
+	opacity: 1.0;
+}
+
 
 .og-grid {
 	list-style: none;
