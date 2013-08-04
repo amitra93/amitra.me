@@ -7,6 +7,14 @@
 * Copyright (c) 2011, Chris Polis
 */
 
+var pageNames = {
+	about: 'about.html',
+	background: 'background.html',
+	projects: 'projects.html',
+	resume: 'resume.html',
+	blog: 'blog.php'
+};
+
 (function($) {
   $.fn.pagify = function(options) {
     var self = this;
@@ -29,23 +37,22 @@
       self.switchPage = function(page) {
         // Page is selected from: passed in value, window.location, default
         if(!page) {
-          page = window.location.hash.replace('#','') || self.settings['default'];
+          page = pageNames[window.location.hash.replace('#','')] || self.settings['default'];
         }
-
         if(self.settings.cache) {
           // Load page content from cache
           $(self)[self.settings.animationOut](self.settings.animationOutSpeed, function() {
             $(self).html(self.pages[page])[self.settings.animation](self.settings.animationSpeed);
           })
-          self.settings.onChange(page);
+          self.settings.onChange(page.substring(0,page.indexOf('.')));
         }
         else {
           // Fetch page content
-          $.get(self.settings.basePagePath+page+'.html', function(content) {
+          $.get(self.settings.basePagePath+page, function(content) {
             $(self)[self.settings.animationOut](self.settings.animationOutSpeed, function() {
               $(self).html(content)[self.settings.animation](self.settings.animationSpeed);
             })
-            self.settings.onChange(page);
+            self.settings.onChange(page.substring(0,page.indexOf('.')));
           }, 'text');
         }
       }
@@ -68,7 +75,7 @@
       self.pages = {};
       var pageLoads = self.settings.pages.length;
       $.each(self.settings.pages, function(ndx, page) {
-        $.get(self.settings.basePagePath+page+'.html', function(content) {
+        $.get(self.settings.basePagePath+page, function(content) {
           self.pages[page] = content;
           pageLoads--;
           //alert(pageLoads);
