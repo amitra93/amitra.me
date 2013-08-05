@@ -8,11 +8,11 @@
 */
 
 var pageNames = {
-	about: 'about.html',
-	background: 'background.html',
-	projects: 'projects.html',
-	resume: 'resume.html',
-	blog: 'blog.php'
+about: 'about.html',
+background: 'background.html',
+projects: 'projects.html',
+resume: 'resume.html',
+blog: 'blog.php'
 };
 
 (function($) {

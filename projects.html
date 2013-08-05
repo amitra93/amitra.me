@@ -1,35 +1,76 @@
-<link rel="stylesheet" type="text/css" href="css/component.css" />
-<script src="js/modernizr.custom.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<noscript>
+	<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+</noscript>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&v2' rel='stylesheet' type='text/css'>
 <article>
 	<h2>Projects I've done</h2>
 	<hr>
-	<ul id="og-grid" class="og-grid">
-		<li>
-			<a href="#" data-title="Project 1" data-description="Random text random text random text random text">
-				<div class="project">Project 1</div>
-			</a>
-		</li>
-		<li>
-			<a href="#" data-title="Project 2" data-description="Random text random text random text random text">
-				<div class="project">Project 2</div>
-			</a>
-		</li>
-		<li>
-			<a href="#" data-title="Project 3" data-description="Random text random text random text random text">
-				<div class="project">Project 3</div>
-			</a>
-		</li>
-		<li>
-			<a href="#" data-title="Project 4" data-description="Random text random text random text random text">
-				<div class="project">Project 4</div>
-			</a>
-		</li>
-	ul>
+	<div id="va-accordion" class="va-container">
+				<div class="va-wrapper">
+					<div class="va-slice va-slice-1">
+						<h3 class="va-title dark left-align">DARS for Dummies</h3>
+						<div class="va-content">
+							<p>Henry Watson</p>
+							<ul>
+								<li><a href="#">About</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="va-slice va-slice-2">
+						<h3 class="va-title dark right-align">Facial Recognizer</h3>
+						<div class="va-content">
+							<p>Keith Johnson</p>
+							<ul>
+								<li><a href="#">About</a></li>
+							</ul>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-3">
+						<h3 class="va-title dark left-align">AutoPi</h3>
+						<div class="va-content">
+							<p>Andrew Alaniz</p>
+							<ul>
+								<li><a href="#">About</a></li>
+							</ul>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-4">
+						<h3 class="va-title dark right-align">amitra.me</h3>
+						<div class="va-content">
+							<p>Ben Freeman</p>
+							<ul>
+								<li><a href="#">About</a></li>
+							</ul>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-5">
+						<h3 class="va-title dark left-align">Serve.to</h3>
+						<div class="va-content">
+							<p>Alex Schuman</p>
+							<ul>
+								<li><a href="#">About</a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</div>
+	<br>
 	<hr>
 </article>
-<script src="js/grid.js"></script>
-<script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.vaccordion.js"></script>
+<script type="text/javascript">
 	$(function() {
-		Grid.init();
+		console.log($(window).width());
+		$('#va-accordion').vaccordion({
+			accordionW		: $(window).width()*.5,
+			accordionH		: $(window).height()*.6,
+			visibleSlices	: 5,
+			expandedHeight	: $(window).height()*.6,
+			animOpacity		: 0.1,
+			contentAnimSpeed: 300
+		});
 	});
 </script>

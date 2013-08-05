@@ -1,6 +1,17 @@
+body {
+	width: 600px;
+    font-family: 'PT Sans', Calibri, Arial, sans-serif;
+    background: #f9f9f9;
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
 .project {
 	background: #fff;
-	width: 250px;
+	width: 40%;
 	height: 250px;
 }
 
@@ -19,7 +30,11 @@
 	height: 250px;
 }
 
-.og-grid li > a,
+.og-grid li > a{
+	height: 300px;
+	width: 100%;
+}
+
 .og-grid li > a img {
 	border: none;
 	outline: none;
@@ -39,17 +54,17 @@
 	border-width: 15px;
 	left: 50%;
 	margin: -20px 0 0 -15px;
+	display: none;
 }
 
 .og-expander {
 	position: absolute;
-	background: #ddd;
+	background: #fff;
 	top: auto;
 	left: 0;
-	width: 100%;
 	margin-top: 10px;
 	text-align: left;
-	height: 0;
+	height: 300px;
 	overflow: hidden;
 }
 
@@ -91,9 +106,13 @@
 	background: #333;
 }
 
-.og-fullimg,
+.og-fullimg{
+	display: none;
+}
+
 .og-details {
-	width: 50%;
+	font-size: 20px;
+	width: 90%;
 	float: left;
 	height: 100%;
 	overflow: hidden;
@@ -115,10 +134,11 @@
 }
 
 .og-details h3 {
+	font-family: 'PT Sans Narrow', Calibri, sans-serif;
 	font-weight: 300;
 	font-size: 52px;
-	padding: 40px 0 10px;
 	margin-bottom: 10px;
+	color: #333;
 }
 
 .og-details p {
@@ -126,19 +146,15 @@
 	font-size: 16px;
 	line-height: 22px;
 	color: #999;
+	margin-bottom: 50px;
 }
 
 .og-details a {
-	font-weight: 700;
-	font-size: 16px;
-	color: #333;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding: 10px 20px;
-	border: 3px solid #333;
-	display: inline-block;
-	margin: 30px 0 0;
-	outline: none;
+	text-decoration: none;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: #111;
+	border-radius: 3px;
 }
 
 .og-details a::before {
@@ -148,8 +164,8 @@
 }
 
 .og-details a:hover {
-	border-color: #999;
-	color: #999;
+	color: #eee;
+	background: #222;
 }
 
 .og-loading {

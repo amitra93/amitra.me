@@ -14,7 +14,6 @@ $(document).ready(function() {
 
 function safeSelect() {
 	var $this = $(this);
-	console.log($this);
 	$this.removeClass('unselected').addClass('selected');
 	$this.closest('ul').find('a').not(this).removeClass('selected').addClass('unselected');
 }

@@ -1,0 +1,295 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Sans+Narrow:700|PT+Sans);
+
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+html {
+   background: url(../img/background.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+a.about {
+	text-decoration: none;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: #94ecf7;
+	border-radius: 3px;
+}
+
+a.about:link {
+}
+
+a.about:active{
+}
+
+a.about:visited {
+}
+
+a.about:hover {
+	color: #000000;
+	background: #ffffff;
+}
+
+img {
+	padding: 4px;
+}
+
+header{
+        color:#FFF;
+        position:absolute;
+        top:25%;
+        left:60%;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+        line-height:1.1;
+
+    }
+	
+header h1{
+        font-size:5em;
+font-family: "PT Sans Narrow", sans-serif;
+    }
+
+header h2{
+        opacity:.75;
+        font-size: 2em;
+font-family: "PT Sans", sans-serif;
+text-transform: uppercase;
+    }
+
+article{
+color:#FFF;
+position:absolute;
+width:50%;
+text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+line-height:1.1;
+padding-top: 4%;
+padding-bottom: 7%;
+left: 30%;
+text-align: justify;
+overflow: hidden;
+}
+
+article h2{
+opacity:.75;
+font-size:52px;
+font-family: "PT Sans Narrow", sans-serif;
+text-align: center;
+}
+
+article h3{
+opacity:.75;
+font-size:38px;
+font-family: "PT Sans Narrow", sans-serif;
+text-align: justify;
+}
+
+article a{
+}
+
+article p{
+font-size:20px;
+font-family: "PT Sans", sans-serif;
+text-align: justify;
+}
+
+hr{
+background: #fff;
+border: 0;
+height: 4px;
+opacity: 0.7;
+margin: 20px auto 20px;
+}
+
+nav {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+nav ul {
+   position: fixed;
+}
+
+nav ul li {
+   height: 50px;
+   background: green;
+   display: block;
+   font-family: "Oswald", sans-serif;
+   position: relative;
+   z-index: 100;
+   margin: 0 0;
+   -webkit-animation: menu 2s;
+   -webkit-animation-fill-mode: forwards;
+   -moz-animation: menu 2s;
+   -moz-animation-fill-mode: forwards;
+   -ms-animation: menu 2s;
+   -ms-animation-fill-mode: forwards;
+   animation: menu 2s; /* Safari and Chrome */
+   animation-fill-mode: forwards;
+   opacity: 0;
+}
+
+nav ul li:hover {
+   cursor: pointer;
+  }
+  
+  
+nav ul li:before {
+	top: 600%;
+    display: block;
+    height: 50px;
+    width: 50px;
+    font-size: 2em;
+    position: absolute;
+    border-right: rgba(255,255,255,0.2) 1px solid;
+    text-align: center;
+    color: #fff;
+    text-shadow: rgba(0,0,0,0.2) 1px 1px 1px;
+    z-index: 200;
+    line-height: 1.3em;
+  }
+
+nav ul li:nth-child(1):before {
+content: url(../img/home.png);
+}
+
+nav ul li:nth-child(2):before {
+content: url(../img/about.png);
+}
+
+nav ul li:nth-child(3):before {
+content: url(../img/projects.png);
+}
+
+nav ul li:nth-child(4):before {
+content: url(../img/resume.png);
+}
+
+
+
+nav ul li a {
+	top: 600%;
+	color: #fff;
+     display: block;
+     height: 50px;
+     padding: 0 2em 0 60px;
+     z-index: 100;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 18px;
+     line-height: 2.8em;
+     position: absolute;
+     overflow: hidden;
+	opacity: .4;
+     -webkit-transition: all 0.1s ease-in-out;
+     -moz-transition: all 0.1s ease-in-out;
+     -ms-transition: all 0.1s ease-in-out;
+     transition: all 0.1s ease-in-out;
+     text-shadow: rgba(0,0,0,0.3) 1px 1px;
+	width: 50px;
+}
+
+  nav ul li:nth-child(1) a {
+    background: #bd2a4e;
+  }
+
+  nav ul li:nth-child(2) a {
+    background: #628179;
+  }
+
+  nav ul li:nth-child(3) a {
+    background: #21aabd;
+  }
+
+  nav ul li:nth-child(4) a {
+    background: #654b6b;
+  }
+
+
+nav ul li a:hover {
+   opacity: 1.0;
+   padding-right: 3.0em;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+nav ul li a.selected {
+opacity: 1.0;
+}
+
+nav ul li a.unselected {
+opacity: .5;
+}
+
+nav ul li:nth-child(1) {
+   -webkit-animation-delay: 0.20s;
+   -moz-animation-delay: 0.20s;
+   -ms-animation-delay: 0.20s;
+   animation-delay: 0.20s;
+}
+
+nav ul li:nth-child(2) {
+   -webkit-animation-delay: 0.40s;
+   -moz-animation-delay: 0.40s;
+   -ms-animation-delay: 0.40s;
+   animation-delay: 0.40s;
+}
+
+nav ul li:nth-child(3) {
+   -webkit-animation-delay: 0.60s;
+   -moz-animation-delay: 0.60s;
+   -ms-animation-delay: 0.60s;
+   animation-delay: 0.60s;
+}
+
+nav ul li:nth-child(4) {
+   -webkit-animation-delay: 0.80s;
+   -moz-animation-delay: 0.80s;
+   -ms-animation-delay: 0.80s;
+   animation-delay: 0.80s;
+}
+
+
+@-webkit-keyframes menu {
+  0% {opacity: 0;}
+  25% {opacity: 0.7;}
+  50% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes menu {
+  0% {opacity: 0;}
+  25% {opacity: 0.7;}
+  50% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@-ms-keyframes menu {
+  0% {opacity: 0;}
+  25% {opacity: 0.7;}
+  50% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes menu {
+  0% {opacity: 0;}
+  25% {opacity: 0.7;}
+  50% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+.social {
+	opacity: .7;
+}
+
+.social:hover {
+	opacity: 1.0;
+}

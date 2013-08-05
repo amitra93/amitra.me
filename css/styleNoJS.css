@@ -1,71 +1,57 @@
 /* Vertical Accordion Style */
 .va-container{
 	position:relative;
+	width:1000px;
 	margin:40px auto 0 auto;
 }
 .va-wrapper{
+	width:100%;
 	height:100%;
 	position:relative;
 	overflow:hidden;
 	background:#000;
-	width: inherit;
 }
 .va-slice{
 	cursor:pointer;
-	position:absolute;
+	position:relative;
+	top:auto;
+	left:auto;
 	width:100%;
-	left:0px;
+	height:250px;
 	overflow:hidden;
-	opacity: 1;
-	color: #000;
 }
-
-.va-slice:hover{
-}
-
 .va-slice-1{
-	background-color:#ddd;
+	background:#000 url(../images/1.jpg) no-repeat center center;
 }
 .va-slice-2{
-	background-color:#ccc;
+	background:#000 url(../images/2.jpg) no-repeat center center;
 }
 .va-slice-3{
-	background-color:#bbb;
+	background:#000 url(../images/3.jpg) no-repeat center center;
 }
 .va-slice-4{
-	background-color:#aaa;
+	background:#000 url(../images/4.jpg) no-repeat center center;
 }
 .va-slice-5{
-	/*background:#000 url(../images/5.jpg) no-repeat center center;*/
-	background-color:#999;
+	background:#000 url(../images/5.jpg) no-repeat center center;
 }
-
+.va-slice-6{
+	background:#000 url(../images/6.jpg) no-repeat center center;
+}
+.va-slice-7{
+	background:#000 url(../images/7.jpg) no-repeat center center;
+}
 .va-title{
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-size:40px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform:uppercase;
+	font-size:60px;
 	margin-left:20px;
+	color:#fff;
+	text-shadow: 0px 0px 1px white;
 }
-
-.light{
-	color:#eee;
-}
-
-.dark{
-	color:#222;
-}
-
-.right-align {
-	text-align: right;
-	margin-right: 20px;
-}
-
-.left-align {
-	text-align: left;
-}
-
 .va-content{
-	display:none;
 	margin-left:25px;
+	display:block;
 }
 .va-slice p{
 	font-size: 22px;
@@ -97,19 +83,18 @@
 	height:25px;
 	background:transparent url(../images/prev.png) no-repeat center center;
 	position:absolute;
-	top:-35px;
+	top:-37px;
 	left:50%;
 	margin-left:-20px;
 	text-indent:-9000px;
 	opacity:0.7;
 	cursor:pointer;
 	display:none;
-	z-index:100;
 }
 .va-nav span.va-nav-next{
 	background-image:url(../images/next.png);
 	top:auto;
-	bottom:-35px;
+	bottom:-37px;
 }
 .va-nav span:hover{
 	opacity:1.0;
