@@ -15,7 +15,7 @@
 	position:absolute;
 	width:100%;
 	left:0px;
-	overflow:hidden;
+	overflow:auto;
 	opacity: 1;
 	color: #000;
 }
@@ -82,12 +82,18 @@
 	margin:0px 2px;
 }
 .va-slice ul li a{
-	color:#000;
-	background:#eede2f;
-	padding:3px 6px;
-	font-size:14px;
-	font-family:'PT Sans', sans-serif;
-	text-transform:uppercase;
+	width: auto;
+	color: #fff;
+	text-transform: uppercase;
+	font-family:'PT Sans Narrow', sans-serif;
+	font-size: 20px;
+	padding: 7px;
+	border-radius: 4px;
+	background: #f00;
+	float: right;
+	color: #eee;
+	background: #0b1647;
+	text-decoration: none;
 }
 .va-slice ul li a:hover{
 	background:#000;
@@ -122,7 +128,7 @@
 	width: auto;
 	color: #fff;
 	margin-right: 30px;
-	margin-top: 50px;
+	margin-top: 8%;
 	text-transform: uppercase;
 	font-family:'PT Sans Narrow', sans-serif;
 	font-size: 20px;
@@ -132,17 +138,22 @@
 	float: right;
 }
 
-.tag-1{
-	color: #fff;
-	background: #0ff;
+.web{
+	color: #eee;
+	background: #660224;
 }
 
-.tag-2{
-	color: #fff;
-	background: #f00;
+.personal{
+	color: #eee;
+	background: #399e71;
 }
 
-.tag-3{
-	color: #fff;
-	background: #0f0;
+.team{
+	color: #eee;
+	background: #8f4c28;
+}
+
+.research{
+	color: #eee;
+	background: #bd20ba;
 }
